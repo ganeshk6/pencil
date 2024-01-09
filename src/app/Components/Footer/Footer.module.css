@@ -1,0 +1,73 @@
+.Footer {
+    display: flex;
+    justify-content: space-between;
+    /* background: linear-gradient(253deg, rgba(178, 0, 0, 0.43) 25.06%, rgba(64, 69, 198, 0.35) 66.25%, rgba(30, 138, 216, 0.00) 98.54%), #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 3rem;
+}
+
+.footerAddress {
+    line-height: 2.5rem;
+    cursor: pointer;
+    /* font-size: 20px; */
+}
+.footerAddress a{
+    color: #fff;
+    text-decoration: none;
+}
+.footerAddress p span {
+    margin-right: 1rem;
+}
+
+.footerContactDetails {
+    display: flex;
+    gap:2rem;
+    flex-direction: row;
+    color: #fff;
+    width: 60%;
+}
+.link a:hover{
+ color: red;
+}
+
+.address p span{
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .Footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .Footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: start;
+        column-gap: 0rem;
+        row-gap: 1rem;
+        padding: 2rem 1rem;
+        font-size: 20px;
+    }
+    .FooterLink ul {
+        display: grid;
+        float: 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .Footer {
+        padding: 2rem 1rem;
+    }
+    .footerContactDetails{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
